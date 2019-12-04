@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<head>
+<title>12 tabelek apokalipsy</title>
+<style>
+.jeden {
+    border: 1px solid black;
+}
+
+.dwa {
+     border-color: blue;
+}
+td {
+    border: 1px solid black;
+}
+
+#one {
+
+    border-color: blue;
+}
+
+.trzy {
+    background-color: black;
+}
+
+.cztery {
+    border: none;
+}
+
+#three {
+    background-image: url("data:image/jpeg;base64,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");
+}
+
+.piec {
+    width: 100px;
+    height: 100px;
+}
+
+.szesc {
+    border-right: 1px solid black;
+    border-top: none;
+    border-left: none;
+    border-bottom: none;
+}
+
+.siedem {
+    border: none;
+    border-bottom: 1px solid black;
+}
+
+#four {
+    border: none;
+    border-bottom: 1px solid black;
+    border-right: 1px solid black;
+}
+
+/*#fajka {
+    background-image: url("https://cdn4.iconfinder.com/data/icons/6x16-free-application-icons/16/Apply.png");
+}
+*/
+
+img  {
+    cursor: pointer;
+}
+
+.osiem {
+    border: none;
+    border-left: 1px solid lightgray;
+    border-bottom: 1px solid lightgray;
+}
+
+.osiem:last-child {
+    border-bottom: 1px solid lightgrey;
+}
+#last {
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
+    border-left: 1px solid gray;
+    border-right: 1px solid gray;
+}
+
+.dziewiec {
+    border: none;
+    border-left: 1px solid gray;
+    border-bottom: 1px solid gray;
+    text-align: center;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.dziesiec {
+    border: none;
+    border-left: 1px solid lightgray;
+}
+
+#jedenascie {
+    border: none;
+    border-bottom: 1px solid gray;
+}
+
+body {
+    background: darkwhite;
+}
+</style>
+</head>
+
+<body>
+ <center>
+<table class="jeden">
+    <tr>
+        <td>a1</td> <td>a2</td> <td>a3</td>
+    </tr>
+    <tr>
+        <td>b1</td> <td>b2</td> <td>b3</td>
+    </tr>
+</table>
+
+<br>
+<br>
+<br>
+
+<table class="jeden" cellpadding="10" cellspacing="1" >
+        <tr>
+            <td>a1</td> <td>a2</td> <td>a3</td>
+        </tr>
+        <tr>
+            <td>b1</td> <td>b2</td> <td>b3</td>
+        </tr>
+    </table>
+    
+
+<br>
+<br>
+<br>
+    
+<table class="jeden" id="one" cellspacing="1">
+        <tr>
+            <td class="dwa">a1</td> <td clas="dwa">a2</td> <td class="dwa">a3</td>
+        </tr>            
+        <tr>
+            <td class="dwa">b1</td> <td class="dwa">b2</td> <td class="dwa">b3</td>
+        </tr>        
+</table>
+        
+<br>
+<br>
+<br>
+
+
+<table>
+<CAPTION ALIGN=top>Najdłuższe rzeki świata</CAPTION>
+    <tr>
+        <td class="trzy" style="color:white">Nazwa</td> <td class="trzy" style="color:white">długość w km</td> <td class="trzy" style="color:white">pow. dorzecza w km kw</td>
+    </tr>
+    <tr>
+        <td class="cztery">Nil</td> <td class="cztery">6671</td> <td class="cztery">2870</td>  
+    </tr>
+    <tr>
+        <td class="cztery">Missisipi(od źródeł Missouri)</td> <td class="cztery">6418</td> <td class="cztery">3275</td>
+    </tr>
+    <tr>
+        <td class="cztery">Amazonka (z Amaron)</td> <td class="cztery">6400</td> <td class="cztery">7180</td>
+    </tr>
+    <tr>
+         <td class="cztery">Jangcy</td> <td class="cztery">5701</td> <td class="cztery">1726</td>
+    </tr>
+</table>
+
+<br>
+<br>
+<br>
+
+<table BORDER CELLPADDING=10 WIDTH=400>
+<CAPTION>Wzrost produkcji w latach 1991-1995 (w mln USD)</CAPTION>
+    <tr bgcolor="gray"><th>1991</th> <th>1992</th><th>1993</th> <th>1994</th> <th>1995</th> </tr>
+        
+        <tr ALIGN=center><td>1150</td><td>1240</td><td>1380</td><td>1420</td><td>1550</td></tr>
+        
+</table>
+        
+<br>
+<br>
+<br>
+
+<table BORDER CELLPADDING=10 WIDTH=400>
+<CAPTION>Wzrost produkcji masła i margaryny w latach 1991-1995 (w mln USD)</CAPTION>
+    <tr><th></th><th>1991</th> <th>1992</th> <th>1993</th> <th>1994</th> <th>1995</th> </tr>
+    <TR ALIGN=center><TH>Masło</TH> <TD>1150</TD><TD>1240</TD><TD>1380</TD><TD>1420</TD><TD>1550</TD></TR>
+    <TR ALIGN=center><TH>Margaryna</TH> <TD>800</TD><TD>900</TD><TD>980</TD><TD>1150</TD><TD>1320</TD></TR>
+</table>
+
+<br>
+<br>
+<br>
+
+<table>
+    <tr>
+        <td rowspan="3">left</td> <td>top</td> <td rowspan="3">right</td>
+    </tr>
+    <tr>
+        <td>center</td>
+    </tr>
+    <tr>
+        <td>row</td>
+    </tr>
+</table>
+
+<br>
+<br>
+<br>
+
+<table>
+    <tr>
+        <td colspan="2">a to pierwsza literka alfabetu</td>
+    </tr>
+    <tr>
+        <td rowspan="3">b</td> <td>c</td>
+    </tr>
+    <tr>
+        <td>d</td>
+    </tr>
+    <tr>
+        <td>e</td>
+    </tr>
+</table>
+<table class="jeden" cellpadding="10" cellspacing="1">
+    <tr>
+        <td valign=top bgcolor="red" class="piec">a1</td> <td valign=top bgcolor="green" class="piec">a2</td> <td valign=top bgcolor="blue" class="piec">a3</td>
+    </tr>
+    <tr>
+        <td valign=middle bgcolor="white" piec="piec">a1</td> <td id="three">a2</td> <td valign=middle bgcolor="black" class="piec">a3</td>
+    </tr>
+    <tr>
+        <td valign=bottom bgcolor="yellow" class="piec">a1</td> <td valign=bottom bgcolor="lightblue" class="piec">a2</td> <td valign=bottom bgcolor="purple" class="piec">a3</td>
+    </tr>
+</table>
+
+<br>
+<br>
+<br>
+
+<table>
+    <tr>
+        <td class="szesc"><strong>produkcja</strong></td> <td class="siedem"><strong>1993</strong></td> <td class="siedem"><strong>1994</strong></td> <td class="siedem"><strong>1995</strong></td> <td class="siedem"><strong>1996</strong></td>
+    </tr>
+    <tr>
+        <td class="szesc">śliwki</td> <td class="cztery">1,2</td> <td class="cztery">1,3</td> <td class="cztery">0,9</td> <td class="cztery">1,5</td>
+    </tr>
+    <tr>
+        <td class="szesc">gruszki</td> <td class="cztery">0,8</td> <td class="cztery">1,1</td> <td class="cztery">1,4</td> <td class="cztery">0,5</td>
+    </tr>
+    <tr>
+        <td class="szesc">jabłka</td> <td class="cztery">3,1</td> <td class="cztery">2,7</td> <td class="cztery">2,2</td> <td class="cztery">3,0</td>
+    </tr>
+    <tr>
+        <td class="szesc">czereśnie</td> <td class="cztery">0,4</td> <td class="cztery">0,3</td> <td class="cztery">0,6</td> <td class="cztery">0,5</td>
+    </tr>
+    <tr>
+        <td id="four">wiśnie</td> <td class="siedem">0,2</td> <td class="siedem">0,4</td> <td class="siedem">0,3</td> <td class="siedem">0,6</td>
+    </tr>
+    <tr>
+        <td class="szesc"><strong>w mln ton</strong></td>
+    </tr>
+</table>
+
+<br>
+<br>
+<br>
+
+<table id="last">
+    <tr>
+        <td id="jedenascie" style="color:darkblue"><strong>ID</strong></td> <td class="dziewiec" style="color:darkblue">Data dodania</td> <td class="dziewiec" style="color:darkblue">Nazwa</td> <td class="dziewiec" style="color:darkblue"> Aktywna</td> <td class="dziewiec" style="color:darkblue">Wbudowana</td> <td class="dziewiec"><img src="https://www.bing.com/th?id=OIP.9E7E05djImKGQpU2DRo60wAAAA&pid=Api&rs=1"></td> <td class="dziewiec"><img src="http://files.softicons.com/download/toolbar-icons/16x16-free-application-icons-by-aha-soft/png/16x16/Message.png"></td> <td class="dziewiec" style="color:darkblue">akcje</td>
+    </tr>
+    <tr>
+        <td class="osiem">20</td> <td class="osiem">17.08.2012 21:37:42</td> <td class="osiem"><strong>Szlaki turystyczne na terenie Gminy Milówka</strong></td> <td class="osiem" id="fajka" style="color:green"><center>tak</center></td> <td class="osiem" style="color:red"><center>nie</center></td> <td class="osiem">10</td> <td class="osiem">0</td> <td class="osiem"><center><img src="https://cdn4.iconfinder.com/data/icons/6x16-free-application-icons/16/Cancel.png"></center></td>
+    </tr>
+    <tr>
+        <td class="osiem">19</td> <td class="osiem">17.08.2012 21:02:30</td> <td class="osiem"><strong>Słownik gwary</strong></td> <td class="osiem" id="fajka" style="color:green"><center>tak</center></td> <td class="osiem" style="color:red"><center>nie</center></td> <td class="osiem">12</td> <td class="osiem">0</td> <td class="osiem"><center><img src="https://cdn4.iconfinder.com/data/icons/6x16-free-application-icons/16/Cancel.png"></center></td>
+    </tr>
+    <tr>
+        <td class="dziesiec">18</td> <td class="dziesiec">17.08.2012 21:02:15</td> <td class="dziesiec"><strong>Zabytki</strong></td> <td class="dziesiec" id="fajka" style="color:green"><center>tak</center></td> <td class="dziesiec" style="color:red"><center>nie</center></td> <td class="dziesiec">3</td> <td class="dziesiec">0</td> <td class="dziesiec"><center><img src="https://cdn4.iconfinder.com/data/icons/6x16-free-application-icons/16/Cancel.png"></center></td>
+    </tr>
+</table>
+
+</center>
+</body>
+</html>
